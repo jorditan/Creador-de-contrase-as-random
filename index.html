@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador contraseñas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Genera una contraseña rápidamente</h1>
+
+        <input id="contraseñaCreada" placeholder="Crea una contraseña aleatoria aprentando el boton"></input>
+
+        <div class="contenedorDelGeneradorRandom">
+            <select id="longitudDeContraseña">
+                <option value="0" selected disabled>Selecciona una longitud</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </select>
+
+            <button onclick="generarContraseñaRandom()">Generar contraseña</button>
+
+            
+        </div>
+        <span id="error"></span>
+    </div>
+</body>
+</html>
